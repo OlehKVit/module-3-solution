@@ -1,0 +1,131 @@
+body {
+  font-size: 18px;
+  font-family: 'Balsamiq Sans', cursive;
+}
+/* HEADER */
+#header-nav {
+  background-color: #959491d4;
+  border-radius: 0;
+  border-top: 4px solid #000;
+  border-bottom: 4px solid #000;
+}
+.navbar-brand {
+  justify-content: center;
+  float: left;
+  height: auto;
+  padding: 25px;
+}
+
+h1 {
+  color: #000000;
+  font-size: 35px;
+  font-weight: bold;
+  margin: 0;
+}
+.navbar {
+  margin-bottom: 0;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+
+#nav-list {
+  margin-top: 0
+}
+#nav-list a {
+  color: #000;
+  border-bottom: 3px solid #000;
+  text-align: center;
+  font-weight: 600;
+}
+#nav-list a:hover {
+  background: #e7e7e7;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 3px solid #000000;
+  border-radius: 6px;
+}
+
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -62px;
+}
+/* END HEADER */
+
+/* HOME PAGE */
+.container .jumbotron {
+  box-shadow: 0 0 50px #3F0C1F;
+}
+.second-title {
+  font-weight: 900;
+  color: #000;
+  margin: 30px;
+}
+h3 {
+  margin: 0;
+  font-weight: 900;
+  color: #000;
+  margin-bottom: 0;
+  padding: 10px 0 0 0;
+}
+#chicken, #beef, #sushi {
+  font-weight: 600;
+  background-color: #959491d4;
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+  border: 0;
+}
+#chicken p, #beef p, #sushi p{
+  padding: 10px 15px 15px 15px;
+}
+#chicken:hover, #beef:hover, #sushi:hover {
+  box-shadow: 0 5px 5px 5px #cccccc;
+}
+#chicken {
+  background-position: center;
+}
+#beef {
+  background-position: center;
+}
+/* End home page */
+
+/********* Large devices only *********/
+@media (min-width: 1200px) {
+  .container .jumbotron {
+    height: 675px;
+  }
+}
+/********* Medium devices only *********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  .container .jumbotron {
+    height: 558px;
+  }
+}
+/********* Small devices only *********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .container .jumbotron {
+    height: 432px;
+  }
+}
+/********* Extra small devices only *********/
+@media (max-width: 767px) {
+  .navbar-brand {
+    height: 80px;
+  }
+  .navbar-brand h1 {  /* name */
+    font-size: 5vw;   /* 1vw = 1% of viewport width */
+  }
+  .navbar-brand p { 
+    font-size: .6em;
+    margin-top: 12px;
+  }
+  #collapsable-nav { 
+    font-size: 1.2em;
+  }
+  .container .jumbotron {
+    margin-top: 30px;
+    padding: 0;
+  }
+}
